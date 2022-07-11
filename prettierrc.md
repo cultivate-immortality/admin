@@ -1,0 +1,7 @@
+{
+"arrowParens": "avoid",
+"printWidth": 120,
+"semi": false, // 格式化不加分号
+"singleQuote": true, // 格式化为单引号
+"trailingComma": "none" // 格式化没有尾随逗号
+}
