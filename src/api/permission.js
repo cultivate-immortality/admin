@@ -1,5 +1,7 @@
 // 权限管理
+
 import request from '@/utils/request'
+
 // 获取所有权限点
 export function getPermissionListAPI() {
   return request({

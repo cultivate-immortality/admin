@@ -52,22 +52,15 @@ export function saveUserDetailById(data) {
   })
 }
 
-// 获取员工基本信息
-export function getUserDetailByIdAPI(id) {
-  return request({
-    url: `/sys/user/${id}`
-  })
-}
-
-// 获取员工个人信息
-export function getPersonalDetailAPI(id) {
+// 读取用户详情的基础信息
+export function getPersonalDetail(id) {
   return request({
     url: `/employees/${id}/personalInfo`
   })
 }
 
-// 保存员工个人信息
-export function updatePersonalAPI(data) {
+// 更新用户详情的基础信息
+export function updatePersonal(data) {
   return request({
     url: `/employees/${data.userId}/personalInfo`,
     method: 'put',
@@ -75,26 +68,18 @@ export function updatePersonalAPI(data) {
   })
 }
 
-// 获取员工岗位信息
-export function getJobDetailAPI(id) {
+// 获取用户的岗位信息
+export function getJobDetail(id) {
   return request({
     url: `/employees/${id}/jobs`
   })
 }
 
-// 保存员工岗位信息
-export function updateJobAPI(data) {
+// 保存岗位信息
+export function updateJob(data) {
   return request({
     url: `/employees/${data.userId}/jobs`,
     method: 'put',
     data
   })
 }
-
-// 给员工分配角色
-export const assignRolesAPI = data =>
-  request({
-    url: '/sys/user/assignRoles',
-    method: 'PUT',
-    data
-  })

@@ -51,7 +51,6 @@ export const assignPermissionsAPI = data =>
   })
 
 // 企业管理
-// 根据id查询企业
 export function getCompanyInfo(companyId) {
   return request({
     url: `/company/${companyId}`

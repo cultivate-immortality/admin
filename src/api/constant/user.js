@@ -1,4 +1,4 @@
-// 员工端
+// 员工
 export default {
   // 假期类型
   holidayType: [
@@ -34,4 +34,3 @@ export default {
     }
   ]
 }
-
